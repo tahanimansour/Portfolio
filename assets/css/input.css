@@ -56,3 +56,38 @@
 @utility row {
     @apply flex items-center;
 }
+
+/* نص صغير بأحرف كبيرة (بدون لون، اللون بنكتبه عند الاستعمال) */
+@utility text-label {
+    @apply text-xs font-bold tracking-widest uppercase;
+}
+
+/* السطر الصغير فوق عنوان القسم: الخط الأحمر جاي من before */
+@utility eyebrow {
+    @apply flex items-center gap-2 text-xs font-bold tracking-widest text-primary uppercase before:block before:h-px before:w-5 before:bg-primary;
+}
+
+/* عنوان القسم */
+@utility section-title {
+    @apply text-[2rem] leading-tight font-bold tracking-normal md:text-[2.5rem];
+}
+
+/* فقرة عادية */
+@utility body-text {
+    @apply text-sm leading-relaxed text-text-secondary md:text-base;
+}
+
+/* حشوة القسم من فوق ومن تحت */
+@utility section-y {
+    @apply py-8 md:py-12;
+}
+
+/* كرت أبيض بإطار وظل */
+@utility card {
+    @apply rounded-lg border border-divider bg-paper shadow-1;
+}
+
+/* شريحة المهارة */
+@utility chip {
+    @apply rounded-full border border-divider bg-paper px-2 py-1 text-sm shadow-1 transition-colors hover:border-primary hover:text-primary;
+}
