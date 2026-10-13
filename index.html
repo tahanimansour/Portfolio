@@ -36,7 +36,6 @@
 
             <div class="container relative grid items-center gap-8 section-y md:grid-cols-2">
 
-
                 <div>
                     <div class="mb-3 row gap-2 text-text-secondary">
                         <span class="h-px w-5 bg-primary"></span>
@@ -58,17 +57,16 @@
                     </p>
 
                     <div class="mt-4 flex flex-wrap gap-2">
-                        <a href="#projects"
-                            class="rounded-sm bg-primary px-3 py-1.5 text-sm font-bold text-white shadow-1 transition-colors hover:bg-primary-dark">
+                        <a href="#projects" class="btn-primary shadow-1">
                             View Projects
                         </a>
                         <a href="./assets/Tahani-Mansour-CV.pdf" download="Tahani-Mansour-CV.pdf"
-                            class="rounded-sm border border-primary px-3 py-1.5 text-sm font-bold text-primary transition-colors hover:bg-secondary">
+                            class="btn-outline">
                             Download CV
                         </a>
                     </div>
 
-                    <div class="mt-4 row flex-wrap  gap-4 border-t border-divider pt-3">
+                    <div class="mt-4 row flex-wrap gap-4 border-t border-divider pt-3">
                         <div>
                             <p class="text-base font-bold">PTUK</p>
                             <p class="text-xs text-text-secondary">Palestine Technical Univ.</p>
@@ -85,7 +83,6 @@
                     </div>
                 </div>
 
-
                 <div class="relative">
                     <div class="p-3 card">
                         <div class="mb-2 flex gap-1">
@@ -99,7 +96,6 @@
   major: 'Computer Eng.',
   status: 'Building &amp; Learning',
 };</pre>
-
 
                     </div>
                 </div>
@@ -127,7 +123,6 @@
                         simple and useful digital experiences.
                     </p>
                 </div>
-
 
                 <div class="divide-y divide-divider rounded-lg border border-divider bg-background px-3 shadow-1">
                     <div class="py-2">
@@ -173,6 +168,191 @@
                     <li class="chip">C++</li>
                     <li class="chip">Python</li>
                     <li class="chip">Git &amp; GitHub</li>
+                </ul>
+
+            </div>
+        </section>
+
+
+        <section id="projects" class="bg-paper">
+            <div class="container section-y">
+
+                <div class="row flex-wrap justify-between gap-2">
+                    <div>
+                        <div class="mb-3 eyebrow">Portfolio</div>
+
+                        <h2 class="section-title">
+                            Featured Projects
+                        </h2>
+                    </div>
+
+                    <a href="#" class="text-link">
+                        View All Projects &rarr;
+                    </a>
+                </div>
+
+                <div class="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+
+                    <article class="card project-card">
+                        <h3 class="project-title">My Book Library</h3>
+                        <p class="project-desc">Add, delete and save books locally.</p>
+                        <ul class="tag-list">
+                            <li class="tag">HTML</li>
+                            <li class="tag">JavaScript</li>
+                        </ul>
+                        <a href="#" class="mt-auto pt-3 text-link">View Code &rarr;</a>
+                    </article>
+
+                    <article class="card project-card">
+                        <h3 class="project-title">Products API</h3>
+                        <p class="project-desc">Browse categories and product details.</p>
+                        <ul class="tag-list">
+                            <li class="tag">JavaScript</li>
+                            <li class="tag">Tailwind</li>
+                            <li class="tag">Axios</li>
+                        </ul>
+                        <a href="#" class="mt-auto pt-3 text-link">View Code &rarr;</a>
+                    </article>
+
+                    <article class="card project-card">
+                        <h3 class="project-title">Freelancer Portfolio</h3>
+                        <p class="project-desc">Freelancer template implementation.</p>
+                        <ul class="tag-list">
+                            <li class="tag">React</li>
+                            <li class="tag">Tailwind</li>
+                        </ul>
+                        <a href="#" class="mt-auto pt-3 text-link">View Code &rarr;</a>
+                    </article>
+
+                    <article class="card project-card">
+                        <h3 class="project-title">Moon</h3>
+                        <p class="project-desc">Ceramics and home decor storefront design.</p>
+                        <ul class="tag-list">
+                            <li class="tag">HTML</li>
+                            <li class="tag">CSS</li>
+                        </ul>
+                        <a href="#" class="mt-auto pt-3 text-link">View Code &rarr;</a>
+                    </article>
+
+                    <article class="card project-card">
+                        <h3 class="project-title">React Product Catalog</h3>
+                        <p class="project-desc">API-powered product cards.</p>
+                        <ul class="tag-list">
+                            <li class="tag">React</li>
+                            <li class="tag">Axios</li>
+                        </ul>
+                        <a href="#" class="mt-auto pt-3 text-link">View Code &rarr;</a>
+                    </article>
+
+                    <article class="card project-card">
+                        <h3 class="project-title">NeuroScan-AI</h3>
+                        <p class="project-desc">Brain MRI classification app.</p>
+                        <ul class="tag-list">
+                            <li class="tag">Deep Learning</li>
+                        </ul>
+                        <a href="#" class="mt-auto pt-3 text-link">View Code &rarr;</a>
+                    </article>
+
+                </div>
+
+                <details class="group mt-4 max-w-[520px]">
+
+                    <summary class="chip add-toggle">
+                        <span class="group-open:hidden">+ Add project</span>
+                        <span class="hidden group-open:inline">&times; Close</span>
+                    </summary>
+
+                    <form action="#" method="post" class="mt-2 grid gap-2 p-3 card">
+
+                        <div>
+                            <label for="project-name" class="field-label">Project name</label>
+                            <input id="project-name" name="name" type="text" maxlength="40" required
+                                placeholder="e.g. Weather App" class="field">
+                        </div>
+
+                        <div>
+                            <label for="project-desc" class="field-label">Description</label>
+                            <textarea id="project-desc" name="description" rows="3" maxlength="120" required
+                                placeholder="Short description of the project"
+                                class="field resize-none"></textarea>
+                        </div>
+
+                        <div>
+                            <label for="project-tech" class="field-label">Technologies</label>
+                            <input id="project-tech" name="tech" type="text" maxlength="60"
+                                placeholder="e.g. React, Tailwind, Axios" class="field">
+                        </div>
+
+                        <div>
+                            <label for="project-link" class="field-label">Link</label>
+                            <input id="project-link" name="link" type="url" required
+                                placeholder="https://github.com/..." class="field">
+                        </div>
+
+                        <button type="submit" class="btn-primary w-fit">Add</button>
+                    </form>
+                </details>
+
+            </div>
+        </section>
+
+
+        <section id="certificates">
+            <div class="container section-y">
+
+                <div class="mb-3 eyebrow">Credentials</div>
+
+                <h2 class="section-title">
+                    Certificates
+                </h2>
+
+                <p class="mt-3 max-w-[560px] body-text">
+                    Verified milestones and technical specializations completed alongside
+                    university coursework.
+                </p>
+
+                <ul class="mt-4 grid gap-3 sm:grid-cols-2 md:grid-cols-4">
+
+                    <li class="card cert-card">
+                        <img src="./assets/img/certificates/introToProgramming.jpeg"
+                            alt="Intro to Programming certificate" class="cert-image">
+                        <div class="p-2">
+                            <h3 class="cert-title">Intro to Programming</h3>
+                            <p class="cert-issuer">Udacity</p>
+                            <p class="cert-topic">Algorithms &amp; Syntax</p>
+                        </div>
+                    </li>
+
+                    <li class="card cert-card">
+                        <img src="./assets/img/certificates/cs.jpeg"
+                            alt="C++ and Data Structures certificate" class="cert-image">
+                        <div class="p-2">
+                            <h3 class="cert-title">C++ &amp; Data Structures</h3>
+                            <p class="cert-issuer">Knowledge Academy</p>
+                            <p class="cert-topic">Memory &amp; Pointers</p>
+                        </div>
+                    </li>
+
+                    <li class="card cert-card">
+                        <img src="./assets/img/certificates/java&oop.jpeg"
+                            alt="Java and OOP certificate" class="cert-image">
+                        <div class="p-2">
+                            <h3 class="cert-title">Java &amp; OOP</h3>
+                            <p class="cert-issuer">Prince Academy</p>
+                            <p class="cert-topic">Architecture Patterns</p>
+                        </div>
+                    </li>
+
+                    <li class="card cert-card">
+                        <img src="./assets/img/certificates/rovira.jpeg"
+                            alt="Computer Vision certificate" class="cert-image">
+                        <div class="p-2">
+                            <h3 class="cert-title">Computer Vision</h3>
+                            <p class="cert-issuer">Review</p>
+                            <p class="cert-topic">Image Processing &amp; ML</p>
+                        </div>
+                    </li>
+
                 </ul>
 
             </div>
