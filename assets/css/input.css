@@ -62,17 +62,16 @@
     @apply text-xs font-bold tracking-widest uppercase;
 }
 
-/* السطر الصغير فوق عنوان القسم: الخط الأحمر جاي من before */
 @utility eyebrow {
     @apply row gap-2 text-xs font-bold tracking-widest text-primary uppercase before:block before:h-px before:w-5 before:bg-primary;
 }
 
-/* عنوان القسم */
+
 @utility section-title {
     @apply text-[2rem] leading-tight font-bold tracking-normal md:text-[2.5rem];
 }
 
-/* فقرة عادية */
+
 @utility body-text {
     @apply text-sm leading-relaxed text-text-secondary md:text-base;
 }
@@ -99,19 +98,17 @@
     @apply rounded-sm bg-primary px-3 py-1.5 text-sm font-bold text-white transition-colors hover:bg-primary-dark;
 }
 
-/* زر بإطار أحمر */
 @utility btn-outline {
     @apply rounded-sm border border-primary px-3 py-1.5 text-sm font-bold text-primary transition-colors hover:bg-secondary;
 }
 
-/* رابط أحمر غامق مع خط تحته عند الـ hover */
+
 @utility text-link {
     @apply text-sm font-bold text-primary hover:underline;
 }
 
-/* ===== كرت المشروع ===== */
 
-/* الكرت: يتمدد على طول خانة الشبكة ويرتفع عند الـ hover */
+
 @utility project-card {
     @apply flex h-full flex-col p-3 transition hover:-translate-y-0.5 hover:border-primary;
 }
@@ -124,24 +121,23 @@
     @apply mt-1 text-sm leading-relaxed text-text-secondary;
 }
 
-/* صف التاغات */
+
 @utility tag-list {
     @apply mt-2 flex flex-wrap gap-1;
 }
 
-/* تاغ التقنية */
+
 @utility tag {
     @apply rounded-full bg-secondary px-1.5 py-0.5 text-xs text-primary;
 }
 
-/* ===== كرت الشهادة ===== */
 
-/* صورة فوق وتفاصيل تحت. overflow-hidden عشان زوايا الصورة تتقص مع زوايا الكرت */
+
 @utility cert-card {
     @apply flex h-full flex-col overflow-hidden transition-colors hover:border-primary;
 }
 
-/* نسبة ثابتة عشان كل الصور تكون بنفس الحجم */
+
 @utility cert-image {
     @apply aspect-[16/10] w-full bg-secondary object-cover;
 }
@@ -158,19 +154,37 @@
     @apply mt-0.5 text-xs text-text-secondary;
 }
 
-/* ===== الفورم ===== */
 
-/* خانة إدخال (input / textarea / select) */
+
+
 @utility field {
     @apply mt-0.5 w-full rounded-sm border border-divider bg-paper px-2 py-1 text-sm outline-none focus:border-primary;
 }
 
-/* لابل فوق الخانة */
+
 @utility field-label {
     @apply text-xs font-bold tracking-widest text-text-secondary uppercase;
 }
 
-/* زر + Add (للـ summary): بنستعمله مع chip، وفيه إخفاء المثلث لسفاري */
+
 @utility add-toggle {
     @apply inline-block list-none border-dashed border-primary font-bold text-primary [&::-webkit-details-marker]:hidden;
 }
+
+
+
+/* صف تواصل: أيقونة + نص + سهم */
+@utility contact-link {
+    @apply row gap-2 rounded-sm border border-divider bg-background p-2 transition-colors hover:border-primary;
+}
+
+
+@utility contact-icon {
+    @apply row h-4 w-4 shrink-0 justify-center rounded-sm bg-secondary text-xs font-bold text-primary;
+}
+
+
+
+
+
+
